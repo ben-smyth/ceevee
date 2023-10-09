@@ -1,8 +1,8 @@
-from input.pdf import pdfInput
+from input import CVParser
 
 
 def main():
-    a = pdfInput("../inputData/pdf/Amsterdam-Modern-Resume-Template-1.pdf")
+    a = CVParser("../inputData/docx/coolfreecv_resume_en_06_n.docx")
     string = a.convertToString()
 
     print(string) 
