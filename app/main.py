@@ -1,12 +1,11 @@
 from input import CVParser
-from processing import extract as extract
-import processing.spacy.spacy as spacy
+from processing.extract import extract
 
 def main():
-    a = CVParser("../inputData/pdf/Amsterdam-Modern-Resume-Template.pdf")
+    a = CVParser("../inputData/pdf/Grace-ResumeViking-11.pdf")
     documentString = a.convertToString()
 
-    extraction = extract.extract(documentString)
+    extraction = extract(documentString)
 
     print(extraction)
 
