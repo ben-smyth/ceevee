@@ -1,6 +1,6 @@
 import nltk
 
-nltk.download('punkt')
+# nltk.download('punkt')
 
 def getTokensByWord(text: str):
     return nltk.word_tokenize(text)
