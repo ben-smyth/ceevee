@@ -1,7 +1,7 @@
 import spacy
 from spacy.matcher import Matcher
 
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('en_core_web_trf')
 
 def getNameFromString(text):
     # Initialize the Matcher with the shared vocabulary
